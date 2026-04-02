@@ -1,0 +1,23 @@
+.background {
+    background: #9397e7;
+}
+h5 {
+    margin: 20px 0px;
+}
+
+#select {
+    display: inline-block;
+    width: 70%;
+    height: 40px;
+}
+
+#button {
+    display: inline-block;
+    width: 25%;
+    height: 40px;
+}
+
+#choice {
+    display: flex;
+    align-items: center;
+}

@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Что бы узнать погоду в Волгограде нажмите кнопку</h3>
-    <button type="button" class="btn btn-dark">Погода в Волгограде</button>
+    <div class="container background">
+        <h5>Прогноз погоды</h5>
+        <div class="row">
+            <div id="choice" class="col-5 ">
+                <select id="select" class="form-select" aria-label="Выберете место для определения погоды">
+                    <option selected disabled>Выберете место для определения погоды</option>
+                    <option value="q=Volgograd">Волгоград</option>
+                    <option value="lat=7.894396&lon=98.298505">Пхукет</option>
+                    <option value="lat=69.372689&lon=88.194716">Норильск</option>
+                    <option value="lat=48.695717&lon=44.508292">Школа программной инженерии</option>
+                    <option value="lat=28.245132&lon=-16.838135">Канары</option>
+                </select>
+                <button id="button" type="button" class="btn btn-info">Узнай погоду</button>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-4 ">
+                <img id="img" src="">
+            </div>
+             <div class="col-4 ">
+                <p id="name"></p>
+                <p id="timezone"></p>
+                <p id="data_dt"></p>
+                <p id="data_temp"></p>
+                <p id="data_feels_like"></p>
+                <p id="data_pressure"></p>
+                <p id="data_humidity"></p>
+                <p id="data_clouds"></p>
+                <p id="data_wind_speed"></p>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="weather.js"></script>
